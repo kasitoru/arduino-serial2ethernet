@@ -1,6 +1,8 @@
 # arduino-serial2ethernet
 Arduino Serial To Ethernet Converter
 
+More information: https://io-net.ru/serial-to-ethernet-adapter-na-arduino/
+
 ## Hardware
 
 Arduino Nano: http://ali.pub/4dnv5u
