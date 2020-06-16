@@ -23,18 +23,19 @@ void setup() {
 
 void loop() {
   size_t size;
+  Ethernet.maintain();
   // Ethernet -> Serial
   if(EthernetClient client = server.available()) {
-    // New TCP client
-  	uint8_t count = 0;
+    // Check new TCP client
+    uint8_t count = 0;
     bool is_new = true;
-  	for(uint8_t i=0; i<MAXCLIENTS; i++) {
+    for(uint8_t i=0; i<MAXCLIENTS; i++) {
       if(clients[i]==client && is_new) {
         is_new = false;
       }
       if(clients[i]) count++;
     }
-    // New TCP client
+    // Storing TCP client
     if(is_new) {
       if(count<MAXCLIENTS) {
         for(uint8_t i=0; i<MAXCLIENTS; i++) {
@@ -49,7 +50,7 @@ void loop() {
         client.stop();
       }
     }
-  	// Data
+    // Data
     while((size = client.available()) > 0) {
       uint8_t* message = (uint8_t*)malloc(size);
       size = client.read(message, size);

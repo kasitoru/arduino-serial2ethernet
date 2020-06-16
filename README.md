@@ -8,8 +8,8 @@ More information: https://io-net.ru/serial-to-ethernet-adapter-na-arduino/
 
 ## Hardware
 
-Arduino Nano: http://ali.pub/4dnv5u
+Arduino Nano: https://aliexpress.ru/item/32832366092.html
 
-Nano Ethernet Shield: http://ali.pub/4dnvcn
+Nano Ethernet Shield: https://aliexpress.ru/item/32341839317.html
 
-RS-232 Module: http://ali.pub/4dnvlz
+RS-232 Module: https://aliexpress.ru/item/33024283173.html
